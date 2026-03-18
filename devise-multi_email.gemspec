@@ -3,7 +3,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'devise/multi_email/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'devise-multi_email'
+  spec.name          = 'devise-multi_email_revived'
   spec.version       = Devise::MultiEmail::VERSION
   spec.authors       = ['ALLEN WANG QIANG', 'Joel Van Horn', 'Micah Gideon Modell']
   spec.email         = ['rovingbreeze@gmail.com', 'joel@joelvanhorn.com', 'micah.modell@gmail.com']
@@ -17,6 +17,11 @@ Gem::Specification.new do |spec|
   spec.bindir        = 'exe'
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
+
+  spec.post_install_message = 'The original gem has been reclaimed so '
+                    + 'this version (e.g. "_revived") is being retired.  '
+                    + 'Please switch back to devise-multi_email for '
+                    + 'continued support/development.'
 
   spec.required_ruby_version = '>= 3.0'
 
