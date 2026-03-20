@@ -18,10 +18,9 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.post_install_message = 'The original gem has been reclaimed so '
-                    + 'this version (e.g. "_revived") is being retired.  '
-                    + 'Please switch back to devise-multi_email for '
-                    + 'continued support/development.'
+  spec.post_install_message = 'The original devise-multi_email gem has
+    been reclaimed so this version (e.g. "_revived") is being retired.
+    Please switch back to devise-multi_email for continued support/development.'
 
   spec.required_ruby_version = '>= 3.0'
 
